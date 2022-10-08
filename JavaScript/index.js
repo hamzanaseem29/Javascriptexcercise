@@ -192,20 +192,11 @@ sortReverse = country_names.sort().reverse();
 console.log(sortReverse);
 
 //Q19 hamza 05/10/2022
-/*
-Dinner Guests: Working with one of the programs 
-from Exercises 14 through 18, print a message indicating
- the number of people you are inviting to dinner.
-*/
 const guest_names = ["Ahmed Ali", "Zeeshan Rauf", "Adam Bukhari"];
 let number_of_people = guest_names.length;
 console.log(number_of_people + " number of people I'm inviting to dinner!");
 
 //Q20 hamza 05/10/2022
-/*Think of something you could store in a array. 
-For example, you could make a list of mountains, rivers, countries, cities, languages, 
-or anything else you’d like. Write a program that creates a list containing these items.*/
-
 const languages = [
     "K2",
     "Himaliya",
@@ -236,10 +227,6 @@ const languages = [
 ];
 
 //Q21 hamza 05/10/2022
-/*
-They think of something you could store in a JavaScript Object.
- Write a program that creates Objects containing these items.
-*/
 let car_obj = {
     car_name: "Civic",
     car_model: "2022",
@@ -248,22 +235,7 @@ let car_obj = {
 };
 console.log(car_obj);
 
-//Q22 hamza 05/10/2022
-/*Intentional Error: If you haven’t received an array index error in one of your programs yet, 
-try to make one happen. Change an index in one of your programs to produce an index error. 
-Make sure you correct the error before closing the program. */
-let array = ["hamza", 345, "white"];
-
 //Q23 hamza 05/10/2022
-/*
-Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
-let car = 'subaru';
-console.log("Is car == 'subaru'? I predict True.")
-console.log(car == 'subaru')
-
-Look closely at your results, and make sure you understand why each line evaluates to True or False.
-Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False. */
-
 let car = "audi";
 console.log("Is car == 'audi'? I predict True");
 console.log(car == "audi");
@@ -417,14 +389,6 @@ if (arr[2] == "orange") {
     console.log(false);
 }
 //Q25 hamza 05/10/2022
-/*
-
-Alien Colors #1: Imagine an alien was just shot down in a game. 
-Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
-Write an if statement to test whether the alien’s color is green. 
-If it is, print a message that the player just earned 5 points.
-Write one version of this program that passes the if test 
-and another that fails. (The version that fails will have no output.) */
 
 alien_color = "green";
 if (alien_color == "green") {
@@ -526,13 +490,6 @@ for (let i = 0; i <= users.length - 1; i++) {
 }
 
 //Q31 hamza 05/10/2022
-/*This program will print message we need to find more user if the list is empty */
-/*
-No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
-• If the list is empty, print the message We need to find some users!
-• Remove all of the usernames from your array, and make sure the correct message is printed.
-*/
-
 let users1 = [];
 for (let i = 0; i <= users.length - 1; i++) {
     if (users1[i] == undefined) {
@@ -543,7 +500,6 @@ for (let i = 0; i <= users.length - 1; i++) {
 //Q32 hamza 05/10/2022
 /*This program will check username from newuser to currentusers
  and will print message not available if the username is already been taken*/
-
 const current_users = [
     "hamza naseem",
     "asad ahmed",
@@ -597,14 +553,6 @@ for (let i = 0; i < favorite_pizza.length; i++) {
 }
 console.log("Pizza is the one type of food i would love to have at any time of the day \nMy most favorite type is the Mozerella pizza.\nI also enjoy eating chilli pepper pizza when I'm looking for a snack")
 //Q35 hamza 07/10/2022
-/*Animals: Think of at least three different animals that have a common characteristic. 
-Store the names of these animals in a list, and then use a for loop to print out the name 
-of each animal.
- • Modify your program to print a statement about each animal, 
- such as A dog would make a great pet. 
- • Add a line at the end of your program stating what these 
- animals have in common.You could print a sentence such as Any of these animals would make a great pet! */
-
 const animal = ['cat', 'dog', 'Rabbit']
 for (let i = 0; i < animal.length; i++) {
     console.log(animal[i]);
@@ -621,10 +569,6 @@ function make_shirt(size, message) {
 make_shirt()
 
 //Q37 hamza 07/10/2022
-/*Large Shirts: Modify the make_shirt() function so that shirts are large by default 
-with a message that reads I love JavaScript. Make a large shirt and 
-a medium shirt with the default message, and a shirt of any size with a different message.*/
-
 function make_shirt(size = "large", message = "I Love JavaScript") {
     console.log("I'm going to buy a " + size + " T-Shirt")
     console.log('It will say, "' + message + '"')
@@ -633,11 +577,6 @@ make_shirt(size = "medium")
 make_shirt("Small", "I love Web Development")
 
 //Q38 hamza 07/10/2022 
-/*Cities: Write a function called describe_city() that accepts the name of a city
- and its country. The function should print a simple sentence, such as Karachi is in Pakistan.
-Give the parameter for the country a default value. Call your function for three different
-   cities, 
-at least one of which is not in the default country.*/
 function describe_city(city, country) {
     console.log(city + " is in " + country)
 }
@@ -655,15 +594,6 @@ city_country("Karachi", "Pakistan")
 city_country("Islamabad", "Pakistan")
 
 //Q40 hamza 07/10/2022
-/*Album: Write a function called make_album() that builds a Object describing a music album. 
-The function should take in an artist name and an album title, 
-and it should return a Object containing these two pieces of information.1done
-Use the function to make three dictionaries representing different albums.
-Print each return value to show that Objects are storing the album information correctly.
-Add an optional parameter to make_album() that allows you to store the number of tracks on an album.
-If the calling line includes a value for the number of tracks, add that value to the album’s Object. 
-Make at least one new function call that includes the number of tracks on an album. */
-
 function make_album(artist, title, tracks = 0) {
     obj_music_album = {
         'artist': artist,
@@ -757,29 +687,6 @@ make_sandwich("Chicken", "Mustard sauce", "Ketchup")
 make_sandwich("Beef", "Mayo", "Ketchup")
 
  //Q45 hamza 07/10/2022
-/*Cars: Write a function that stores information about a car in a Object. 
-The function should always receive a manufacturer and a model name.
- It should then accept an arbitrary number of keyword arguments. 
- Call the function with the required information and two other name-value pairs, such as a color or an optional feature.
- Print the Object that’s returned to make sure all the information was stored correctly. */
-/*def make_car(manufacturer, model, **options):
-    """Make a dictionary representing a car."""
-    car_dict = {
-        'manufacturer': manufacturer.title(),
-        'model': model.title(),
-        }
-    for option, value in options.items():
-        car_dict[option] = value
-
-    return car_dict
-
-my_outback = make_car('subaru', 'outback', color='blue', tow_package=True)
-print(my_outback)
-
-my_accord = make_car('honda', 'accord', year=1991, color='white',
-        headlights='popup')
-print(my_accord)
- */
  function make_car(manufacturer,model_name,...option){
     car_obj = {
         'manufacturer' : manufacturer,
